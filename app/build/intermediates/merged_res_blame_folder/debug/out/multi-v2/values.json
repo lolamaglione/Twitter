@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/lolamaglione/AndroidStudioProjects/Twitter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/2173da8f0e3b2f5d6ed51ddfa294cf15/lifecycle-viewmodel-2.3.1/res/values/values.xml",
@@ -35,6 +35,25 @@
                         "startOffsets": "15575",
                         "endColumns": "57",
                         "endOffsets": "15628"
+                    }
+                },
+                {
+                    "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "2,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "17,357",
+                        "endLines": "8,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "319,512"
+                    },
+                    "to": {
+                        "startLines": "307,314",
+                        "startColumns": "4,4",
+                        "startOffsets": "19991,20298",
+                        "endLines": "313,316",
+                        "endColumns": "12,12",
+                        "endOffsets": "20293,20453"
                     }
                 },
                 {
@@ -76,6 +95,40 @@
                     }
                 },
                 {
+                    "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "3,6,5,4",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "56,209,161,114",
+                        "endColumns": "57,46,47,46",
+                        "endOffsets": "109,251,204,156"
+                    },
+                    "to": {
+                        "startLines": "296,297,298,299",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "19225,19283,19330,19378",
+                        "endColumns": "57,46,47,46",
+                        "endOffsets": "19278,19325,19373,19420"
+                    }
+                },
+                {
+                    "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/values/dimens.xml",
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "89,147",
+                        "endColumns": "57,55",
+                        "endOffsets": "142,198"
+                    },
+                    "to": {
+                        "startLines": "154,155",
+                        "startColumns": "4,4",
+                        "startOffsets": "10373,10431",
+                        "endColumns": "57,55",
+                        "endOffsets": "10426,10482"
+                    }
+                },
+                {
                     "source": "/Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/b3cfbfb1b9d3c28903be03b381ffe5a1/jetified-savedstate-1.1.0/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -90,23 +143,6 @@
                         "startOffsets": "16878",
                         "endColumns": "53",
                         "endOffsets": "16927"
-                    }
-                },
-                {
-                    "source": "/Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "3,6,5,4",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "56,209,161,114",
-                        "endColumns": "57,46,47,46",
-                        "endOffsets": "109,251,204,156"
-                    },
-                    "to": {
-                        "startLines": "296,297,298,299",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "19225,19283,19330,19378",
-                        "endColumns": "57,46,47,46",
-                        "endOffsets": "19278,19325,19373,19420"
                     }
                 },
                 {
@@ -129,25 +165,6 @@
                     }
                 },
                 {
-                    "source": "/Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "2,11",
-                        "startColumns": "4,4",
-                        "startOffsets": "17,357",
-                        "endLines": "8,13",
-                        "endColumns": "12,12",
-                        "endOffsets": "319,512"
-                    },
-                    "to": {
-                        "startLines": "307,314",
-                        "startColumns": "4,4",
-                        "startOffsets": "19991,20298",
-                        "endLines": "313,316",
-                        "endColumns": "12,12",
-                        "endOffsets": "20293,20453"
-                    }
-                },
-                {
                     "source": "/Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/5b22b0456eb746581b5b739357fde86e/lifecycle-runtime-2.3.1/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -162,23 +179,6 @@
                         "startOffsets": "16835",
                         "endColumns": "42",
                         "endOffsets": "16873"
-                    }
-                },
-                {
-                    "source": "/Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/res/values/dimens.xml",
-                    "from": {
-                        "startLines": "3,4",
-                        "startColumns": "4,4",
-                        "startOffsets": "89,147",
-                        "endColumns": "57,55",
-                        "endOffsets": "142,198"
-                    },
-                    "to": {
-                        "startLines": "154,155",
-                        "startColumns": "4,4",
-                        "startOffsets": "10373,10431",
-                        "endColumns": "57,55",
-                        "endOffsets": "10426,10482"
                     }
                 },
                 {

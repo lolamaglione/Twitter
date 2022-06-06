@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/lolamaglione/AndroidStudioProjects/Twitter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
+            "outputFile": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
             "map": [
                 {
                     "source": "/Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/cc5e9dcdc56dc39042f72c501235e83f/core-1.5.0/res/values-zh-rHK/values-zh-rHK.xml",
