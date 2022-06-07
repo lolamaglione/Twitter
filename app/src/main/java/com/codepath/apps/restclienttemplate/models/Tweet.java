@@ -3,10 +3,12 @@ package com.codepath.apps.restclienttemplate.models;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Parcel
 public class Tweet {
 
     //body of the tweet
@@ -15,6 +17,10 @@ public class Tweet {
     public String createdAt;
     public User user;
 
+    // empty constructor needed
+    public Tweet(){
+
+    }
     // create a tweet item with data from the JSONObject.
     public static Tweet fromJson(JSONObject jsonObject) throws JSONException {
         Tweet tweet = new Tweet();
