@@ -65,12 +65,14 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
         ImageView ivProfileImage;
         TextView tvBody;
         TextView tvScreenName;
+        ImageView ivMedia;
         // itemView = representation of one row of the recyclerView
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             ivProfileImage = itemView.findViewById(R.id.ivProfileImage);
             tvBody = itemView.findViewById(R.id.tvBody);
             tvScreenName= itemView.findViewById(R.id.tvScreenName);
+            ivMedia = itemView.findViewById(R.id.ivMedia);
         }
 
         // take out the different attributes of the screen and use it to fill out what we have on screen
@@ -78,6 +80,11 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
             tvBody.setText(tweet.body);
             tvScreenName.setText(tweet.user.screenName);
             Glide.with(context).load(tweet.user.profileImageURL).into(ivProfileImage);
+            if (tweet.imageURL != "") {
+                Glide.with(context).load(tweet.imageURL).into(ivMedia);
+            }else{
+                ivMedia.setVisibility(View.GONE);
+            }
         }
     }
 

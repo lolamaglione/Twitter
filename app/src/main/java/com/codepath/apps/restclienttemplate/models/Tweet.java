@@ -16,6 +16,7 @@ public class Tweet {
     // when tweet was created
     public String createdAt;
     public User user;
+    public String imageURL;
 
     // empty constructor needed
     public Tweet(){
@@ -24,7 +25,18 @@ public class Tweet {
     // create a tweet item with data from the JSONObject.
     public static Tweet fromJson(JSONObject jsonObject) throws JSONException {
         Tweet tweet = new Tweet();
-        tweet.body = jsonObject.getString("text");
+        tweet.imageURL = "";
+        if(jsonObject.has("full_text")){
+            tweet.body = jsonObject.getString("full_text");
+        } else {
+            tweet.body = jsonObject.getString("text");
+        }
+        if(jsonObject.getJSONObject("entities").has("media")){
+            JSONArray mediaArray = jsonObject.getJSONObject("entities").getJSONArray("media");
+            JSONObject media = mediaArray.getJSONObject(0);
+            tweet.imageURL = mediaArray.getJSONObject(0).getString("media_url_https");
+        }
+
         tweet.createdAt = jsonObject.getString("created_at");
         tweet.user = User.fromJson(jsonObject.getJSONObject("user"));
         return tweet;

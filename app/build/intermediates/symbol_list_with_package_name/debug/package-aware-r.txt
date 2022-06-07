@@ -1197,6 +1197,7 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id ivMedia
 id ivProfileImage
 id labeled
 id largeLabel
