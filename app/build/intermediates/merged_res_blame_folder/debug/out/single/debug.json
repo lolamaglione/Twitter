@@ -4,6 +4,10 @@
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xhdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/layout_activity_timeline.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/layout/activity_timeline.xml"
+    },
+    {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat",
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-hdpi/ic_launcher.png"
     },
@@ -22,5 +26,9 @@
     {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/menu_login.xml.flat",
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/menu/login.xml"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/layout_item_tweet.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/layout/item_tweet.xml"
     }
 ]

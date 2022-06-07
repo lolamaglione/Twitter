@@ -1,13 +1,15 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-39:12
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-41:12
 MERGED from [com.codepath.libraries:android-oauth-handler:2.4.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/7d70dbd1ec8afdb53ca3c5b5d8bd9bf5/jetified-android-oauth-handler-2.4.0/AndroidManifest.xml:2:1-11:12
 MERGED from [com.codepath.libraries:asynchttpclient:2.2.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/15c99611345f395ad8562412ff79a9e3/jetified-asynchttpclient-2.2.0/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/77c7b97873973e149b09819f46c0a153/appcompat-1.3.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1f6004bd08e328db94a4df3854ac2f3d/jetified-glide-4.11.0/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/5c2d055b9576f9b1a68fe7075632917c/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/dc3efdeb21bfe033ce749010f42b490d/recyclerview-1.2.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1205f2be382ee3936676331c0046bb40/room-runtime-2.4.0-alpha03/AndroidManifest.xml:17:1-31:12
 MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/fb1b7547383b0b439da17748889a73d0/jetified-stetho-okhttp3-1.5.1/AndroidManifest.xml:2:1-13:12
 MERGED from [com.facebook.stetho:stetho:1.5.1] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/64a2149ff0fb46f4e6639b0209599bb7/jetified-stetho-1.5.1/AndroidManifest.xml:2:1-13:12
@@ -16,10 +18,10 @@ MERGED from [androidx.activity:activity:1.2.3] /Users/lolamaglione/.gradle/cache
 MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/a171b9d351fa3c3e43a6b0f78d6ded81/jetified-appcompat-resources-1.3.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/9bcad8df747e7e541c668492e993a22d/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/b9a8ccdf08677e6ebe8a29448e9bae04/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/3438716bbde0c4ae93b6b3ca42413f5c/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/818f45328ee8f5b99bad88c27c6cc009/loader-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/f8265d5cb033aea9b3b2b59393038f53/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/d9a1f9c79beb812a29c08dec8e929987/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/3438716bbde0c4ae93b6b3ca42413f5c/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.5.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/cc5e9dcdc56dc39042f72c501235e83f/core-1.5.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/9f5395c9e2c4a1a11a43e64f5d81258c/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/d2ff709217adbaee68cbce4e138923f2/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
@@ -37,35 +39,37 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/lolamaglio
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/69846ae0a25a5c26a4168a449d371740/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/a81ff3a6f4fe4cdba627ce49c2369465/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0-rc01] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/bca23baa0986ad105b347d583120bfc0/jetified-annotation-experimental-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-41:12
 	package
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:3:5-51
-		INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:3:5-51
+		INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:5:5-30
-		INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:4:5-28
-		INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:7:5-67
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:7:22-64
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:7:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:8:5-81
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:8:22-78
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:8:22-78
 application
-ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:10:5-37:19
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:10:5-39:19
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1f6004bd08e328db94a4df3854ac2f3d/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1f6004bd08e328db94a4df3854ac2f3d/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/5c2d055b9576f9b1a68fe7075632917c/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/5c2d055b9576f9b1a68fe7075632917c/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1205f2be382ee3936676331c0046bb40/room-runtime-2.4.0-alpha03/AndroidManifest.xml:24:5-29:19
 MERGED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1205f2be382ee3936676331c0046bb40/room-runtime-2.4.0-alpha03/AndroidManifest.xml:24:5-29:19
 MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/fb1b7547383b0b439da17748889a73d0/jetified-stetho-okhttp3-1.5.1/AndroidManifest.xml:11:5-20
@@ -81,57 +85,63 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/lola
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/cc5e9dcdc56dc39042f72c501235e83f/core-1.5.0/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:14:9-41
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:14:9-41
 	android:icon
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:13:9-45
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:13:9-45
 	android:allowBackup
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:15:9-40
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:15:9-40
 	android:name
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:11:9-35
+activity#com.codepath.apps.restclienttemplate.TimelineActivity
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:16:9-18:40
+	android:exported
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:17:13-45
 activity#com.codepath.apps.restclienttemplate.LoginActivity
-ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:17:9-36:20
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:19:9-38:20
 	android:label
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:20:13-45
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:21:13-45
 	android:theme
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:19:13-44
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:22:13-44
 	android:name
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:18:13-78
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:20:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:21:13-25:29
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:22:17-69
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:22:25-66
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:24:17-77
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:24:27-74
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:26:27-74
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:@string/intent_host+data:scheme:@string/intent_scheme
-ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:26:13-35:29
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:28:13-37:29
 action#android.intent.action.VIEW
-ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:27:17-69
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:27:25-66
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:29:25-66
 category#android.intent.category.DEFAULT
-ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:29:17-76
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:31:17-76
 	android:name
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:29:27-73
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:31:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:30:17-78
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:32:17-78
 	android:name
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:30:27-75
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:32:27-75
 data
-ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:32:17-34:62
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:34:17-36:62
 	android:host
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:33:21-55
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:35:21-55
 	android:scheme
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:34:21-59
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:36:21-59
 uses-sdk
-INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
-INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
+INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
+INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
 MERGED from [com.codepath.libraries:android-oauth-handler:2.4.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/7d70dbd1ec8afdb53ca3c5b5d8bd9bf5/jetified-android-oauth-handler-2.4.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.codepath.libraries:android-oauth-handler:2.4.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/7d70dbd1ec8afdb53ca3c5b5d8bd9bf5/jetified-android-oauth-handler-2.4.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.codepath.libraries:asynchttpclient:2.2.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/15c99611345f395ad8562412ff79a9e3/jetified-asynchttpclient-2.2.0/AndroidManifest.xml:7:5-9:41
@@ -140,6 +150,10 @@ MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/lolamaglione/.gradle/cac
 MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/77c7b97873973e149b09819f46c0a153/appcompat-1.3.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1f6004bd08e328db94a4df3854ac2f3d/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1f6004bd08e328db94a4df3854ac2f3d/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/5c2d055b9576f9b1a68fe7075632917c/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/5c2d055b9576f9b1a68fe7075632917c/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/dc3efdeb21bfe033ce749010f42b490d/recyclerview-1.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/dc3efdeb21bfe033ce749010f42b490d/recyclerview-1.2.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1205f2be382ee3936676331c0046bb40/room-runtime-2.4.0-alpha03/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1205f2be382ee3936676331c0046bb40/room-runtime-2.4.0-alpha03/AndroidManifest.xml:20:5-22:41
 MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/fb1b7547383b0b439da17748889a73d0/jetified-stetho-okhttp3-1.5.1/AndroidManifest.xml:7:5-9:41
@@ -156,14 +170,14 @@ MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/lolamaglione/.grad
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/9bcad8df747e7e541c668492e993a22d/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/b9a8ccdf08677e6ebe8a29448e9bae04/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/b9a8ccdf08677e6ebe8a29448e9bae04/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/3438716bbde0c4ae93b6b3ca42413f5c/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/3438716bbde0c4ae93b6b3ca42413f5c/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/818f45328ee8f5b99bad88c27c6cc009/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/818f45328ee8f5b99bad88c27c6cc009/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/f8265d5cb033aea9b3b2b59393038f53/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/f8265d5cb033aea9b3b2b59393038f53/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/d9a1f9c79beb812a29c08dec8e929987/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/d9a1f9c79beb812a29c08dec8e929987/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/3438716bbde0c4ae93b6b3ca42413f5c/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/3438716bbde0c4ae93b6b3ca42413f5c/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.5.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/cc5e9dcdc56dc39042f72c501235e83f/core-1.5.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.5.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/cc5e9dcdc56dc39042f72c501235e83f/core-1.5.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/9f5395c9e2c4a1a11a43e64f5d81258c/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
@@ -198,16 +212,16 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/lolamaglione/.grad
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/a81ff3a6f4fe4cdba627ce49c2369465/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.1.0-rc01] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/bca23baa0986ad105b347d583120bfc0/jetified-annotation-experimental-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0-rc01] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/bca23baa0986ad105b347d583120bfc0/jetified-annotation-experimental-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
-INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
+INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
+INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
-		ADDED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/lolamaglione/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
 service#androidx.room.MultiInstanceInvalidationService
 ADDED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1205f2be382ee3936676331c0046bb40/room-runtime-2.4.0-alpha03/AndroidManifest.xml:25:9-28:40
 	android:exported
