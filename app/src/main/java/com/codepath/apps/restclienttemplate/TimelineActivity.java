@@ -1,9 +1,11 @@
 package com.codepath.apps.restclienttemplate;
 
 
+import android.content.Intent;
 import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -69,6 +71,22 @@ public class TimelineActivity extends AppCompatActivity {
                 Log.i(TAG, "onFailure: " + response);
             }
         });
+    }
+
+    public void logoutToRest(View view){
+        finish();
+        onLogoutButton();
+    }
+
+    public void onLogoutButton(){
+        //forget who's logged in
+        TwitterApp.getRestClient(this).clearAccessToken();
+
+        // navigate backwards to Login screen
+        Intent i = new Intent(this, LoginActivity.class);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); // this makes sure the back button won't work
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); // same as above
+        startActivity(i);
     }
 
 

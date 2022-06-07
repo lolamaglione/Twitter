@@ -763,6 +763,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id button
 id buttonPanel
 id center_vertical
 id chains

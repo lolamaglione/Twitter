@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_timeline.xml" value="0.22073211669921874" />
         <entry key="app/src/main/res/layout/item_tweet.xml" value="0.47260284423828125" />
       </map>
