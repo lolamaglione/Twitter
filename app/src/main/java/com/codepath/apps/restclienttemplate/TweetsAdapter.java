@@ -47,13 +47,8 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
 
     @Override
     public int getItemCount() {
-        return 0;
+        return tweets.size();
     }
-
-
-
-
-
 
     // define a view holder
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -71,7 +66,7 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
         // take out the different attributes of the screen and use it to fill out what we have on screen
         public void bind(Tweet tweet) {
             tvBody.setText(tweet.body);
-            tvBody.setText(tweet.user.screenName);
+            tvScreenName.setText(tweet.user.screenName);
             Glide.with(context).load(tweet.user.profileImageURL).into(ivProfileImage);
         }
     }

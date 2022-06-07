@@ -5,8 +5,12 @@ import android.content.Intent;
 import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -40,7 +44,7 @@ public class TimelineActivity extends AppCompatActivity {
         // find the recycler view
         rvTweets = findViewById(R.id.rvTweets);
         //initialize the list of tweets and adapter
-        tweets = new ArrayList<Tweet>();
+        tweets = new ArrayList<>();
         adapter = new TweetsAdapter(this, tweets);
         // recycler view cofniguration setup:
             // layout manager and adapter
@@ -73,11 +77,34 @@ public class TimelineActivity extends AppCompatActivity {
         });
     }
 
+    // Must return true for the menu to be displaced
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    // return false to allow normal menu items to continue
+    // return true to do something
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.compose){
+            // compose icon has been selected
+            Toast.makeText(this, "Compose!", Toast.LENGTH_SHORT).show();
+            // navigate to the compose actvity
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    // called when click logout button
     public void logoutToRest(View view){
         finish();
         onLogoutButton();
     }
 
+    // go back to login screen when click logout button
     public void onLogoutButton(){
         //forget who's logged in
         TwitterApp.getRestClient(this).clearAccessToken();
