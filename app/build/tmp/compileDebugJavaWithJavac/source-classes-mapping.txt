@@ -14,6 +14,9 @@ com/codepath/apps/restclienttemplate/MyDatabase.java
  com.codepath.apps.restclienttemplate.MyDatabase
 com/codepath/apps/restclienttemplate/models/SampleModelDao.java
  com.codepath.apps.restclienttemplate.models.SampleModelDao
+com/codepath/apps/restclienttemplate/ComposeActivity.java
+ com.codepath.apps.restclienttemplate.ComposeActivity
+ com.codepath.apps.restclienttemplate.ComposeActivity$1
 com/codepath/apps/restclienttemplate/models/Tweet.java
  com.codepath.apps.restclienttemplate.models.Tweet
 com/codepath/apps/restclienttemplate/TimelineActivity.java

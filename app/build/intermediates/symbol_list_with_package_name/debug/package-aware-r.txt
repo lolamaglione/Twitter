@@ -763,6 +763,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnTweet
 id button
 id buttonPanel
 id center_vertical
@@ -784,6 +785,7 @@ id direct
 id disableHome
 id edit_query
 id end
+id etCompose
 id expand_activities_button
 id expanded_menu
 id forever
@@ -938,6 +940,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_compose
 layout activity_login
 layout activity_timeline
 layout custom_dialog
@@ -987,6 +990,7 @@ string intent_scheme
 string login_label
 string search_menu_title
 string status_bar_notification_info_overflow
+string tweet
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

@@ -4,6 +4,10 @@
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xhdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/layout_activity_compose.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/layout/activity_compose.xml"
+    },
+    {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/layout_activity_timeline.xml.flat",
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/layout/activity_timeline.xml"
     },

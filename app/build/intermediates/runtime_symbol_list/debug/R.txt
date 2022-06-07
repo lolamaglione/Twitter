@@ -762,6 +762,7 @@ int id barrier 0x7f0800b1
 int id beginning 0x7f08003e
 int id blocking 0x7f08003f
 int id bottom 0x7f080040
+int id btnTweet 0x7f0800c9
 int id button 0x7f0800c7
 int id buttonPanel 0x7f080041
 int id center_vertical 0x7f080042
@@ -783,6 +784,7 @@ int id direct 0x7f0800b4
 int id disableHome 0x7f08004e
 int id edit_query 0x7f08004f
 int id end 0x7f080050
+int id etCompose 0x7f0800ca
 int id expand_activities_button 0x7f080051
 int id expanded_menu 0x7f080052
 int id forever 0x7f080053
@@ -937,6 +939,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_compose 0x7f0b002a
 int layout activity_login 0x7f0b001c
 int layout activity_timeline 0x7f0b0028
 int layout custom_dialog 0x7f0b001d
@@ -986,6 +989,7 @@ int string intent_scheme 0x7f0d001d
 int string login_label 0x7f0d001e
 int string search_menu_title 0x7f0d001f
 int string status_bar_notification_info_overflow 0x7f0d0020
+int string tweet 0x7f0d0021
 int style AlertDialog_AppCompat 0x7f0e0000
 int style AlertDialog_AppCompat_Light 0x7f0e0001
 int style Animation_AppCompat_Dialog 0x7f0e0002
