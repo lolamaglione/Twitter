@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-44:12
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-50:12
 MERGED from [com.codepath.libraries:android-oauth-handler:2.4.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/7d70dbd1ec8afdb53ca3c5b5d8bd9bf5/jetified-android-oauth-handler-2.4.0/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1252afd1dc9f5469c30b4174466bb74f/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.codepath.libraries:asynchttpclient:2.2.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/15c99611345f395ad8562412ff79a9e3/jetified-asynchttpclient-2.2.0/AndroidManifest.xml:2:1-11:12
@@ -51,9 +51,9 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/lolamaglione/.grad
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/b93e2b8a7319b8231fdc1936a598b860/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/f8503f66578d12caa389b09e1e5eca48/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0-rc01] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/bca23baa0986ad105b347d583120bfc0/jetified-annotation-experimental-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-50:12
 	package
 		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:3:5-51
 		INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
@@ -77,7 +77,7 @@ ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidMani
 	android:name
 		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:8:22-78
 application
-ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:10:5-42:19
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:10:5-48:19
 MERGED from [com.google.android.material:material:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1252afd1dc9f5469c30b4174466bb74f/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1252afd1dc9f5469c30b4174466bb74f/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1f6004bd08e328db94a4df3854ac2f3d/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
@@ -108,56 +108,68 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/lola
 		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:15:9-40
 	android:name
 		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:11:9-35
-activity#com.codepath.apps.restclienttemplate.ComposeActivity
+activity#com.codepath.apps.restclienttemplate.ReplyComposeActivity
 ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:16:9-18:40
 	android:exported
 		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:17:13-44
-activity#com.codepath.apps.restclienttemplate.TimelineActivity
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:17:13-49
+activity#com.codepath.apps.restclienttemplate.TweetDetailsActivity
 ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:19:9-21:40
 	android:exported
 		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:20:13-45
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:20:13-49
+activity#com.codepath.apps.restclienttemplate.ComposeActivity
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:22:9-24:40
+	android:exported
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:23:13-44
+activity#com.codepath.apps.restclienttemplate.TimelineActivity
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:25:9-27:40
+	android:exported
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:26:13-45
 activity#com.codepath.apps.restclienttemplate.LoginActivity
-ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:22:9-41:20
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:28:9-47:20
 	android:label
-		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:24:13-45
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:30:13-45
 	android:theme
-		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:25:13-44
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:31:13-44
 	android:name
-		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:23:13-42
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:29:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:26:13-30:29
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
-ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:27:17-69
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:27:25-66
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:29:17-77
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:29:27-74
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:35:27-74
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:@string/intent_host+data:scheme:@string/intent_scheme
-ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:31:13-40:29
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:37:13-46:29
 action#android.intent.action.VIEW
-ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:32:17-69
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:38:17-69
 	android:name
-		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:32:25-66
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:38:25-66
 category#android.intent.category.DEFAULT
-ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:34:17-76
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:40:17-76
 	android:name
-		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:34:27-73
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:40:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:35:17-78
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:41:17-78
 	android:name
-		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:35:27-75
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:41:27-75
 data
-ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:37:17-39:62
+ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:43:17-45:62
 	android:host
-		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:38:21-55
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:44:21-55
 	android:scheme
-		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:39:21-59
+		ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:45:21-59
 uses-sdk
 INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml

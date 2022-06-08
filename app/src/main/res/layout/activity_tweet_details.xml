@@ -20,7 +20,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_toEndOf="@+id/ivProfileDetail"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/tvUsernameDetail"

@@ -26,6 +26,7 @@ public class ComposeActivity extends AppCompatActivity {
     EditText etCompose;
     Button btnTweet;
     TwitterClient client;
+    Tweet tweet;
     private FloatingActionButton floatingButtonCompose;
 
     public static final int MAX_TWEET_LENGTH = 140;
@@ -34,12 +35,16 @@ public class ComposeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compose);
-
+        //tweet = (Tweet) Parcels.unwrap(getIntent().getParcelableExtra(Tweet.class.getSimpleName()));
         client = TwitterApp.getRestClient(this);
         etCompose = findViewById(R.id.etCompose);
         btnTweet = findViewById(R.id.btnTweet);
-
+        //etCompose.setText("@" + );
         // Set click listener on button
+        String username = getIntent().getStringExtra("username");
+        if (username != null){
+            etCompose.setText("@" + username + " ");
+        }
         btnTweet.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){

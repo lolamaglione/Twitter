@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -40,12 +41,13 @@ public class TimelineActivity extends AppCompatActivity {
     public static final String TAG = "TimelineActivity";
     private final int REQUEST_CODE = 20;
     FloatingActionButton floatingButtonCompose;
+    ImageButton ibReply;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
-
+        //ibReply = findViewById(R.id.btnReply);
         System.out.println("here");
         client = TwitterApp.getRestClient(this);
 
@@ -71,6 +73,18 @@ public class TimelineActivity extends AppCompatActivity {
                 startActivityForResult(intent, REQUEST_CODE);
             }
         });
+
+//        ibReply.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(TimelineActivity.this, ComposeActivity.class);
+//                startActivityForResult(intent, REQUEST_CODE);
+//                Tweet tweet = (Tweet) view.getTag();
+//                intent.putExtra("username", tweet.user.screenName);
+//            }
+//        });
+
+
 
         swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override

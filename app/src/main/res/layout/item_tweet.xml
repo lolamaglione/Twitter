@@ -25,7 +25,8 @@
         android:layout_marginStart="6dp"
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/ivProfileImage"
-        tools:text="LolaMaglione17" />
+        tools:text="LolaMaglione17"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/tvBody"
@@ -66,4 +67,15 @@
         android:layout_marginStart="5dp"
         android:layout_toEndOf="@+id/tvScreenName"
         android:text="TextView" />
+
+    <ImageButton
+        android:id="@+id/btnReply"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/ivMedia"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        app:srcCompat="@drawable/ic_vector_compose" />
+
 </RelativeLayout>

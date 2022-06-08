@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -73,6 +74,7 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
         ImageView ivMedia;
         TextView tvName;
         TextView tvTimeAgo;
+        ImageButton ibReply;
         // itemView = representation of one row of the recyclerView
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -82,6 +84,7 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
             tvName = itemView.findViewById(R.id.tvUsername);
             ivMedia = itemView.findViewById(R.id.ivMedia);
             tvTimeAgo = itemView.findViewById(R.id.tvTime);
+            ibReply = itemView.findViewById(R.id.btnReply);
 
             // Navigate to tweet Details activity on click of card view
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -112,6 +115,15 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
             }else{
                 ivMedia.setVisibility(View.GONE);
             }
+
+            ibReply.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(context, ComposeActivity.class);
+                    intent.putExtra("username", tweet.user.screenName);
+                    context.startActivity(intent);
+                }
+            });
         }
     }
 

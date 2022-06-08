@@ -1183,6 +1183,7 @@ int id barrier 0x7f080040
 int id beginning 0x7f080041
 int id blocking 0x7f080042
 int id bottom 0x7f080043
+int id btnReply 0x7f080115
 int id btnTweet 0x7f080044
 int id button 0x7f080045
 int id buttonPanel 0x7f080046
