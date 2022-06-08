@@ -1,6 +1,7 @@
 package com.codepath.apps.restclienttemplate;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +16,10 @@ import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 
+import org.parceler.Parcels;
+
 import java.util.List;
+
 
 public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolder>{
     Context context;
@@ -78,6 +82,21 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
             tvName = itemView.findViewById(R.id.tvUsername);
             ivMedia = itemView.findViewById(R.id.ivMedia);
             tvTimeAgo = itemView.findViewById(R.id.tvTime);
+
+            // Navigate to tweet Details activity on click of card view
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int position = getAbsoluteAdapterPosition();
+                    if(position != RecyclerView.NO_POSITION){
+                        // get tweet at the position
+                        Tweet tweet = tweets.get(position);
+                        Intent intent = new Intent(context, TweetDetailsActivity.class);
+                        intent.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
+                        context.startActivity(intent);
+                    }
+                }
+            });
         }
 
         // take out the different attributes of the screen and use it to fill out what we have on screen
@@ -86,10 +105,10 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
             tvScreenName.setText("@"+tweet.user.screenName);
             tvName.setText(tweet.user.name);
             tvTimeAgo.setText(tweet.relativeTimeAgo);
-            Glide.with(context).load(tweet.user.profileImageURL).into(ivProfileImage);
+            Glide.with(context).load(tweet.user.profileImageURL).apply(new RequestOptions().circleCrop()).into(ivProfileImage);
             if (tweet.imageURL != null) {
                 ivMedia.setVisibility(View.VISIBLE);
-                Glide.with(context).load(tweet.imageURL).apply(new RequestOptions().centerCrop().transform(new RoundedCorners(25))).into(ivMedia);
+                Glide.with(context).load(tweet.imageURL).apply(new RequestOptions().centerCrop().transform(new RoundedCorners(100))).into(ivMedia);
             }else{
                 ivMedia.setVisibility(View.GONE);
             }

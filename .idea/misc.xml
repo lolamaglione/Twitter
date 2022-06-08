@@ -3,9 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-xxhdpi/ic_vector_close.xml" value="0.149" />
+        <entry key="app/src/main/res/drawable-xxhdpi/ic_vector_compose.xml" value="0.149" />
+        <entry key="app/src/main/res/drawable-xxhdpi/ic_vector_compose_dm.xml" value="0.149" />
+        <entry key="app/src/main/res/drawable-xxhdpi/ic_vector_follow.xml" value="0.149" />
+        <entry key="app/src/main/res/drawable-xxhdpi/ic_vector_gif_pill.xml" value="0.149" />
+        <entry key="app/src/main/res/drawable-xxhdpi/ic_vector_gif_pill_stroke.xml" value="0.149" />
+        <entry key="app/src/main/res/drawable-xxhdpi/ic_vector_heart.xml" value="0.149" />
+        <entry key="app/src/main/res/drawable-xxhdpi/ic_vector_heart_stroke.xml" value="0.149" />
+        <entry key="app/src/main/res/drawable-xxhdpi/ic_vector_home.xml" value="0.149" />
+        <entry key="app/src/main/res/drawable-xxhdpi/ic_vector_home_stroke.xml" value="0.149" />
+        <entry key="app/src/main/res/drawable/shape_border.xml" value="0.148" />
+        <entry key="app/src/main/res/drawable/tweet_background.xml" value="0.148" />
+        <entry key="app/src/main/res/layout/action_view_progress.xml" value="0.13802083333333334" />
         <entry key="app/src/main/res/layout/activity_compose.xml" value="0.19505157470703133" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_timeline.xml" value="0.22073211669921874" />
+        <entry key="app/src/main/res/layout/activity_timeline.xml" value="0.3174957275390625" />
+        <entry key="app/src/main/res/layout/activity_tweet_details.xml" value="0.1390625" />
         <entry key="app/src/main/res/layout/item_tweet.xml" value="0.2830188679245283" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.2661346435546874" />
       </map>
