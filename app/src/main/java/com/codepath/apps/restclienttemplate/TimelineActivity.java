@@ -60,14 +60,14 @@ public class TimelineActivity extends AppCompatActivity {
             // layout manager and adapter
         rvTweets.setLayoutManager(new LinearLayoutManager(this));
         rvTweets.setAdapter(adapter);
-        populateHomeTimeline();
+
 
         swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
                 // your code to refrsh the list here
                 fetchTimelineAsync(0);
-                swipeContainer.setRefreshing(false);
+//                swipeContainer.setRefreshing(false);
             }
         });
         // Configure the refreshing colors
@@ -75,6 +75,7 @@ public class TimelineActivity extends AppCompatActivity {
                 android.R.color.holo_green_light,
                 android.R.color.holo_orange_light,
                 android.R.color.holo_red_light);
+        populateHomeTimeline();
     }
 
     private void populateHomeTimeline() {
@@ -129,6 +130,8 @@ public class TimelineActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
     // Must return true for the menu to be displaced
     @Override

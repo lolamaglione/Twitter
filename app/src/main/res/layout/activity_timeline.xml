@@ -23,10 +23,15 @@
             android:layout_marginTop="0dp" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
         android:onClick="logoutToRest"
         android:text="Logout" />
 </RelativeLayout>

@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.bumptech.glide.request.RequestOptions;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 
 import java.util.List;
@@ -25,6 +27,15 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
         this.tweets = tweets;
     }
 
+    public void clear(){
+        tweets.clear();
+        notifyDataSetChanged();
+    }
+
+    public void addAll(List<Tweet> list) {
+        tweets.addAll(list);
+        notifyDataSetChanged();
+    }
 
     // for each row, inflate the layout for a tweet
     @NonNull
@@ -45,16 +56,6 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
         holder.bind(tweet);
     }
 
-    public void clear(){
-        tweets.clear();
-        notifyDataSetChanged();
-    }
-
-    public void addAll(List<Tweet> list) {
-        tweets.addAll(list);
-        notifyDataSetChanged();
-    }
-
     @Override
     public int getItemCount() {
         return tweets.size();
@@ -66,22 +67,29 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
         TextView tvBody;
         TextView tvScreenName;
         ImageView ivMedia;
+        TextView tvName;
+        TextView tvTimeAgo;
         // itemView = representation of one row of the recyclerView
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             ivProfileImage = itemView.findViewById(R.id.ivProfileImage);
             tvBody = itemView.findViewById(R.id.tvBody);
             tvScreenName= itemView.findViewById(R.id.tvScreenName);
+            tvName = itemView.findViewById(R.id.tvUsername);
             ivMedia = itemView.findViewById(R.id.ivMedia);
+            tvTimeAgo = itemView.findViewById(R.id.tvTime);
         }
 
         // take out the different attributes of the screen and use it to fill out what we have on screen
         public void bind(Tweet tweet) {
             tvBody.setText(tweet.body);
-            tvScreenName.setText(tweet.user.screenName);
+            tvScreenName.setText("@"+tweet.user.screenName);
+            tvName.setText(tweet.user.name);
+            tvTimeAgo.setText(tweet.relativeTimeAgo);
             Glide.with(context).load(tweet.user.profileImageURL).into(ivProfileImage);
-            if (tweet.imageURL != "") {
-                Glide.with(context).load(tweet.imageURL).into(ivMedia);
+            if (tweet.imageURL != null) {
+                ivMedia.setVisibility(View.VISIBLE);
+                Glide.with(context).load(tweet.imageURL).apply(new RequestOptions().centerCrop().transform(new RoundedCorners(25))).into(ivMedia);
             }else{
                 ivMedia.setVisibility(View.GONE);
             }
