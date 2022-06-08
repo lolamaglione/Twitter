@@ -39,7 +39,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/ivProfileDetail"
         android:layout_marginTop="5dp"
-        android:text="TextView" />
+        android:text="TextView"
+        android:autoLink="all"/>
 
     <ImageView
         android:id="@+id/ivMediaDetail"
