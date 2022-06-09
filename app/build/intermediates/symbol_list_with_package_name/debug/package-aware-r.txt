@@ -1292,6 +1292,7 @@ id right
 id right_icon
 id right_side
 id rvTweets
+id rvUserTweets
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1355,7 +1356,6 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView2
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1385,6 +1385,7 @@ id tvScreenName
 id tvTime
 id tvUsername
 id tvUsernameDetail
+id tvUsernameProfile
 id tweet_text_input_layout
 id unchecked
 id uniform
