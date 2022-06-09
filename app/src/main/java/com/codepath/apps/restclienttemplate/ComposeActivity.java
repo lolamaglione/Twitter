@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.codepath.apps.restclienttemplate.databinding.ActivityComposeBinding;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -28,17 +29,25 @@ public class ComposeActivity extends AppCompatActivity {
     TwitterClient client;
     Tweet tweet;
     private FloatingActionButton floatingButtonCompose;
+    private ActivityComposeBinding binding;
 
     public static final int MAX_TWEET_LENGTH = 140;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_compose);
+        //setContentView(R.layout.activity_compose);
+        //activity_compose.xml --> ActivityComposeBinding
+        binding = ActivityComposeBinding.inflate(getLayoutInflater());
+        // layout of activity is stored in a special property called root
+        View view = binding.getRoot();
+        setContentView(view);
         //tweet = (Tweet) Parcels.unwrap(getIntent().getParcelableExtra(Tweet.class.getSimpleName()));
         client = TwitterApp.getRestClient(this);
-        etCompose = findViewById(R.id.etCompose);
-        btnTweet = findViewById(R.id.btnTweet);
+//        etCompose = findViewById(R.id.etCompose);
+//        btnTweet = findViewById(R.id.btnTweet);
+        etCompose = binding.etCompose;
+        btnTweet = binding.btnTweet;
         //etCompose.setText("@" + );
         // Set click listener on button
         String username = getIntent().getStringExtra("username");

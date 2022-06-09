@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.codepath.apps.restclienttemplate.databinding.ActivityTimelineBinding;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -44,21 +45,27 @@ public class TimelineActivity extends AppCompatActivity {
     ImageButton ibReply;
     Long max_id;
     private EndlessRecyclerViewScrollListener scrollListener;
+    private ActivityTimelineBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_timeline);
+        binding = ActivityTimelineBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        //setContentView(R.layout.activity_timeline);
+        setContentView(view);
         //ibReply = findViewById(R.id.btnReply);
         System.out.println("here");
         client = TwitterApp.getRestClient(this);
 
         // Lookup the swipe container view
-        swipeContainer = (SwipeRefreshLayout) findViewById(R.id.swipeContainer);
+        //swipeContainer = (SwipeRefreshLayout) findViewById(R.id.swipeContainer);
+        swipeContainer = binding.swipeContainer;
         // setup refresh listner which triggers new data loading
 
         // find the recycler view
-        rvTweets = findViewById(R.id.rvTweets);
+        //rvTweets = findViewById(R.id.rvTweets);
+        rvTweets = binding.rvTweets;
         //initialize the list of tweets and adapter
         tweets = new ArrayList<>();
         adapter = new TweetsAdapter(this, tweets);
@@ -67,7 +74,8 @@ public class TimelineActivity extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         rvTweets.setLayoutManager(linearLayoutManager);
         rvTweets.setAdapter(adapter);
-        floatingButtonCompose = findViewById(R.id.fabCompose);
+        //floatingButtonCompose = findViewById(R.id.fabCompose);
+        floatingButtonCompose = binding.fabCompose;
         scrollListener = new EndlessRecyclerViewScrollListener(linearLayoutManager) {
             @Override
             public void onLoadMore(int page, int totalItemsCount, RecyclerView view) {

@@ -4,6 +4,7 @@ ADDED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidMani
 INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-50:12
 INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-50:12
 INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:2:1-50:12
+MERGED from [androidx.databinding:viewbinding:4.2.2] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/e100e1d87f3eab663026c1e722d50103/jetified-viewbinding-4.2.2/AndroidManifest.xml:17:1-22:12
 MERGED from [com.codepath.libraries:android-oauth-handler:2.4.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/7d70dbd1ec8afdb53ca3c5b5d8bd9bf5/jetified-android-oauth-handler-2.4.0/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1252afd1dc9f5469c30b4174466bb74f/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.codepath.libraries:asynchttpclient:2.2.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/15c99611345f395ad8562412ff79a9e3/jetified-asynchttpclient-2.2.0/AndroidManifest.xml:2:1-11:12
@@ -174,6 +175,8 @@ uses-sdk
 INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
 INJECTED from /Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:4.2.2] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/e100e1d87f3eab663026c1e722d50103/jetified-viewbinding-4.2.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:4.2.2] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/e100e1d87f3eab663026c1e722d50103/jetified-viewbinding-4.2.2/AndroidManifest.xml:20:5-44
 MERGED from [com.codepath.libraries:android-oauth-handler:2.4.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/7d70dbd1ec8afdb53ca3c5b5d8bd9bf5/jetified-android-oauth-handler-2.4.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.codepath.libraries:android-oauth-handler:2.4.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/7d70dbd1ec8afdb53ca3c5b5d8bd9bf5/jetified-android-oauth-handler-2.4.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.material:material:1.0.0] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1252afd1dc9f5469c30b4174466bb74f/material-1.0.0/AndroidManifest.xml:20:5-44

@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
+import com.codepath.apps.restclienttemplate.databinding.ActivityTweetDetailsBinding;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 
 import org.parceler.Parcels;
@@ -23,18 +24,21 @@ public class TweetDetailsActivity extends AppCompatActivity {
     TextView tvUsername;
     TextView tvBody;
     ImageView ivMedia;
+    private ActivityTweetDetailsBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tweet_details);
+        binding = ActivityTweetDetailsBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
 
         // getting IDs from activity_tweet_detail
-        ivProfile = (ImageView) findViewById(R.id.ivProfileDetail);
-        tvName = (TextView) findViewById(R.id.tvNameDetail);
-        tvUsername = (TextView) findViewById(R.id.tvUsernameDetail);
-        tvBody = (TextView) findViewById(R.id.tvBodyDetail);
-        ivMedia = (ImageView) findViewById(R.id.ivMediaDetail);
+        ivProfile = binding.ivProfileDetail;
+        tvName = binding.tvNameDetail;
+        tvUsername = binding.tvUsernameDetail;
+        tvBody = binding.tvBodyDetail;
+        ivMedia = binding.ivMediaDetail;
 
         //Get tweet that has been selected
         tweet = (Tweet) Parcels.unwrap(getIntent().getParcelableExtra(Tweet.class.getSimpleName()));
