@@ -2,6 +2,7 @@ package com.codepath.apps.restclienttemplate;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.graphics.PorterDuff;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,15 +19,19 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
 import com.codepath.apps.restclienttemplate.models.Tweet;
+import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 
 import org.parceler.Parcels;
 
 import java.util.List;
 
+import okhttp3.Headers;
+
 
 public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolder>{
     Context context;
     List<Tweet> tweets;
+    private EndlessRecyclerViewScrollListener scrollListener;
 
     // Pass in the context and list of tweets
     public TweetsAdapter(Context context, List<Tweet> tweets){
@@ -78,6 +84,7 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
         ImageButton ibReply;
         TextView tvFavourites;
         TextView tvRetweet;
+        ImageButton ibFavorite;
         // itemView = representation of one row of the recyclerView
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -90,6 +97,7 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
             ibReply = itemView.findViewById(R.id.btnReply);
             tvFavourites = itemView.findViewById(R.id.tvFavourites);
             tvRetweet = itemView.findViewById(R.id.tvRetweet);
+            ibFavorite = itemView.findViewById(R.id.ibFavorite);
 
             // Navigate to tweet Details activity on click of card view
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -116,6 +124,11 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
             tvTimeAgo.setText(tweet.relativeTimeAgo);
             tvFavourites.setText("" + tweet.favoriteCount);
             tvRetweet.setText("" + tweet.retweet_count);
+            if(tweet.favorited){
+                ibFavorite.setImageResource(R.drawable.ic_vector_heart);
+            } else{
+                ibFavorite.setImageResource(R.drawable.ic_vector_heart_stroke);
+            }
             Glide.with(context).load(tweet.user.profileImageURL).apply(new RequestOptions().circleCrop()).into(ivProfileImage);
             if (tweet.imageURL != null) {
                 ivMedia.setVisibility(View.VISIBLE);
@@ -124,12 +137,54 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
                 ivMedia.setVisibility(View.GONE);
             }
 
+            TwitterClient client = new TwitterClient(context);
             ibReply.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(context, ComposeActivity.class);
                     intent.putExtra("username", tweet.user.screenName);
                     context.startActivity(intent);
+                }
+            });
+
+            ibFavorite.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Long tweetID = tweet.tweetID;
+                    if(tweet.favorited == false){
+
+                        client.likeTweet(tweetID, new JsonHttpResponseHandler() {
+                            @Override
+                            public void onSuccess(int statusCode, Headers headers, JSON json) {
+                                tweet.favorited = true;
+                                tweet.favoriteCount++;
+                                tvFavourites.setText("" + tweet.favoriteCount);
+                                ibFavorite.setImageResource(R.drawable.ic_vector_heart);
+                                Toast.makeText(context, "liked", Toast.LENGTH_SHORT).show();
+                            }
+
+                            @Override
+                            public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
+                                Toast.makeText(context, "not working", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
+                    else if (tweet.favorited == true){
+                        client.unLikeTweet(tweetID, new JsonHttpResponseHandler() {
+                            @Override
+                            public void onSuccess(int statusCode, Headers headers, JSON json) {
+                                tweet.favorited = false;
+                                tweet.favoriteCount--;
+                                tvFavourites.setText("" + tweet.favoriteCount);
+                                ibFavorite.setImageResource(R.drawable.ic_vector_heart_stroke);
+                                Toast.makeText(context, "unlike", Toast.LENGTH_SHORT).show();
+                            }
+                            @Override
+                            public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
+                                Toast.makeText(context, "notworking", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
                 }
             });
         }

@@ -1067,6 +1067,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_launcher
+drawable ic_logout
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
@@ -1186,7 +1187,6 @@ id blocking
 id bottom
 id btnReply
 id btnTweet
-id button
 id buttonPanel
 id center
 id center_horizontal
@@ -1198,7 +1198,6 @@ id chronometer
 id clip_horizontal
 id clip_vertical
 id collapseActionView
-id compose
 id container
 id content
 id contentPanel
@@ -1239,12 +1238,12 @@ id group_divider
 id groups
 id home
 id homeAsUp
+id ibFavorite
 id ibRetweet
 id icon
 id icon_group
 id ifRoom
 id image
-id imageButton3
 id info
 id invisible
 id italic
@@ -1260,6 +1259,7 @@ id line1
 id line3
 id listMode
 id list_item
+id logout
 id masked
 id message
 id middle

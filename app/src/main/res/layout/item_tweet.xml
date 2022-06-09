@@ -81,7 +81,7 @@
         app:srcCompat="@drawable/ic_vector_compose" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/ibFavorite"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_below="@+id/ivMedia"
@@ -89,7 +89,8 @@
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/btnReply"
         android:backgroundTint="#00FFFFFF"
-        app:srcCompat="@drawable/ic_vector_heart" />
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_vector_heart_stroke" />
 
     <TextView
         android:id="@+id/tvFavourites"
@@ -98,7 +99,7 @@
         android:layout_below="@+id/ivMedia"
         android:layout_marginStart="2dp"
         android:layout_marginTop="15dp"
-        android:layout_toEndOf="@+id/imageButton3"
+        android:layout_toEndOf="@+id/ibFavorite"
         android:text="TextView" />
 
     <ImageButton

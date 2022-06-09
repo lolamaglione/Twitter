@@ -1066,6 +1066,7 @@ int drawable design_ic_visibility_off 0x7f070062
 int drawable design_password_eye 0x7f070063
 int drawable design_snackbar_background 0x7f070064
 int drawable ic_launcher 0x7f070065
+int drawable ic_logout 0x7f070097
 int drawable ic_mtrl_chip_checked_black 0x7f070066
 int drawable ic_mtrl_chip_checked_circle 0x7f070067
 int drawable ic_mtrl_chip_close_circle 0x7f070068
@@ -1185,7 +1186,6 @@ int id blocking 0x7f080042
 int id bottom 0x7f080043
 int id btnReply 0x7f080115
 int id btnTweet 0x7f080044
-int id button 0x7f080045
 int id buttonPanel 0x7f080046
 int id center 0x7f080047
 int id center_horizontal 0x7f080048
@@ -1197,7 +1197,6 @@ int id chronometer 0x7f08004d
 int id clip_horizontal 0x7f08004e
 int id clip_vertical 0x7f08004f
 int id collapseActionView 0x7f080050
-int id compose 0x7f080051
 int id container 0x7f080052
 int id content 0x7f080053
 int id contentPanel 0x7f080054
@@ -1238,12 +1237,12 @@ int id group_divider 0x7f080075
 int id groups 0x7f080076
 int id home 0x7f080077
 int id homeAsUp 0x7f080078
+int id ibFavorite 0x7f08011d
 int id ibRetweet 0x7f080118
 int id icon 0x7f080079
 int id icon_group 0x7f08007a
 int id ifRoom 0x7f08007b
 int id image 0x7f08007c
-int id imageButton3 0x7f080116
 int id info 0x7f08007d
 int id invisible 0x7f08007e
 int id italic 0x7f08007f
@@ -1259,6 +1258,7 @@ int id line1 0x7f080085
 int id line3 0x7f080086
 int id listMode 0x7f080087
 int id list_item 0x7f080088
+int id logout 0x7f08011c
 int id masked 0x7f080089
 int id message 0x7f08008a
 int id middle 0x7f08008b

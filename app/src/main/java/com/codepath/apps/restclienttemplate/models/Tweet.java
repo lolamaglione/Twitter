@@ -30,6 +30,8 @@ public class Tweet {
     private static final int MINUTE_MILLIS = 60 * SECOND_MILLIS;
     private static final int HOUR_MILLIS = 60 * MINUTE_MILLIS;
     private static final int DAY_MILLIS = 24 * HOUR_MILLIS;
+    public Long tweetID;
+    public boolean favorited;
 
     // empty constructor needed
     public Tweet(){
@@ -56,6 +58,8 @@ public class Tweet {
         tweet.favoriteCount = jsonObject.getInt("favorite_count");
         tweet.retweet_count = jsonObject.getInt("retweet_count");
         tweet.user = User.fromJson(jsonObject.getJSONObject("user"));
+        tweet.tweetID = jsonObject.getLong("id");
+        tweet.favorited = jsonObject.getBoolean("favorited");
         return tweet;
     }
 
