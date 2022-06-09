@@ -1252,6 +1252,7 @@ id ivMedia
 id ivMediaDetail
 id ivProfileDetail
 id ivProfileImage
+id ivProfileProfile
 id labeled
 id largeLabel
 id left
@@ -1354,6 +1355,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView2
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1370,10 +1372,14 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tvBioProfile
 id tvBody
 id tvBodyDetail
 id tvFavourites
+id tvFollowersProfile
+id tvFollowingProfile
 id tvNameDetail
+id tvNameProfile
 id tvRetweet
 id tvScreenName
 id tvTime
@@ -1451,6 +1457,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_compose
 layout activity_login
+layout activity_profile
 layout activity_timeline
 layout activity_tweet_details
 layout custom_dialog

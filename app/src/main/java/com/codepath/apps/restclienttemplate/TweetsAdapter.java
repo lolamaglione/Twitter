@@ -3,6 +3,7 @@ package com.codepath.apps.restclienttemplate;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,6 +25,7 @@ import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import org.parceler.Parcels;
 
 import java.util.List;
+import java.util.regex.Pattern;
 
 import okhttp3.Headers;
 
@@ -85,6 +87,7 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
         TextView tvFavourites;
         TextView tvRetweet;
         ImageButton ibFavorite;
+        ImageButton ibRetweet;
         // itemView = representation of one row of the recyclerView
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -98,6 +101,7 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
             tvFavourites = itemView.findViewById(R.id.tvFavourites);
             tvRetweet = itemView.findViewById(R.id.tvRetweet);
             ibFavorite = itemView.findViewById(R.id.ibFavorite);
+            ibRetweet = itemView.findViewById(R.id.ibRetweet);
 
             // Navigate to tweet Details activity on click of card view
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -119,6 +123,17 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
         public void bind(Tweet tweet) {
 
             tvBody.setText(tweet.body);
+
+            new PatternEditableBuilder().
+                    addPattern(Pattern.compile("\\@(\\w+)"), Color.BLUE,
+                            new PatternEditableBuilder.SpannableClickedListener() {
+                                @Override
+                                public void onSpanClicked(String text) {
+                                    Toast.makeText(context, "Clicked username: " + text,
+                                            Toast.LENGTH_SHORT).show();
+                                }
+                            }).into(tvBody);
+
             tvScreenName.setText("@"+tweet.user.screenName);
             tvName.setText(tweet.user.name);
             tvTimeAgo.setText(tweet.relativeTimeAgo);
@@ -128,6 +143,12 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
                 ibFavorite.setImageResource(R.drawable.ic_vector_heart);
             } else{
                 ibFavorite.setImageResource(R.drawable.ic_vector_heart_stroke);
+            }
+
+            if (tweet.retweeted){
+                ibRetweet.setImageResource(R.drawable.ic_vector_retweet);
+            } else {
+                ibRetweet.setImageResource(R.drawable.ic_vector_retweet_stroke);
             }
             Glide.with(context).load(tweet.user.profileImageURL).apply(new RequestOptions().circleCrop()).into(ivProfileImage);
             if (tweet.imageURL != null) {
@@ -182,6 +203,46 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
                             @Override
                             public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
                                 Toast.makeText(context, "notworking", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
+                }
+            });
+
+            ibRetweet.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Long tweetID = tweet.tweetID;
+                    if(!tweet.retweeted){
+                        client.retweet(tweetID, new JsonHttpResponseHandler() {
+                            @Override
+                            public void onSuccess(int statusCode, Headers headers, JSON json) {
+                                tweet.retweeted = true;
+                                tweet.retweet_count++;
+                                tvRetweet.setText("" + tweet.retweet_count);
+                                ibRetweet.setImageResource(R.drawable.ic_vector_retweet);
+                                Toast.makeText(context, "succes!", Toast.LENGTH_SHORT).show();
+                            }
+
+                            @Override
+                            public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
+
+                            }
+                        });
+                    } else {
+                        client.unretweet(tweetID, new JsonHttpResponseHandler() {
+                            @Override
+                            public void onSuccess(int statusCode, Headers headers, JSON json) {
+                                tweet.retweeted = false;
+                                tweet.retweet_count--;
+                                tvRetweet.setText("" + tweet.retweet_count);
+                                ibRetweet.setImageResource(R.drawable.ic_vector_retweet_stroke);
+                                Toast.makeText(context, "succes!", Toast.LENGTH_SHORT).show();
+                            }
+
+                            @Override
+                            public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
+
                             }
                         });
                     }

@@ -21,6 +21,9 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.codepath.apps.restclienttemplate.ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name="com.codepath.apps.restclienttemplate.ReplyComposeActivity"
             android:exported="false" />
         <activity

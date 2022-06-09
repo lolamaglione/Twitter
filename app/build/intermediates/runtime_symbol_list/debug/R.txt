@@ -1251,6 +1251,7 @@ int id ivMedia 0x7f080083
 int id ivMediaDetail 0x7f080084
 int id ivProfileDetail 0x7f080085
 int id ivProfileImage 0x7f080086
+int id ivProfileProfile 0x7f080116
 int id labeled 0x7f080087
 int id largeLabel 0x7f080088
 int id left 0x7f080089
@@ -1353,6 +1354,7 @@ int id text2 0x7f0800e9
 int id textSpacerNoButtons 0x7f0800ea
 int id textSpacerNoTitle 0x7f0800eb
 int id textStart 0x7f0800ec
+int id textView2 0x7f080117
 int id text_input_password_toggle 0x7f0800ed
 int id textinput_counter 0x7f0800ee
 int id textinput_error 0x7f0800ef
@@ -1369,10 +1371,14 @@ int id transition_layout_save 0x7f0800f9
 int id transition_position 0x7f0800fa
 int id transition_scene_layoutid_cache 0x7f0800fb
 int id transition_transform 0x7f0800fc
+int id tvBioProfile 0x7f080118
 int id tvBody 0x7f0800fd
 int id tvBodyDetail 0x7f0800fe
 int id tvFavourites 0x7f0800ff
+int id tvFollowersProfile 0x7f080119
+int id tvFollowingProfile 0x7f08011a
 int id tvNameDetail 0x7f080100
+int id tvNameProfile 0x7f08011b
 int id tvRetweet 0x7f080101
 int id tvScreenName 0x7f080102
 int id tvTime 0x7f080103
@@ -1450,6 +1456,7 @@ int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_compose 0x7f0b001c
 int layout activity_login 0x7f0b001d
+int layout activity_profile 0x7f0b003c
 int layout activity_timeline 0x7f0b001e
 int layout activity_tweet_details 0x7f0b001f
 int layout custom_dialog 0x7f0b0020
