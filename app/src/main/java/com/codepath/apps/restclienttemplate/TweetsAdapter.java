@@ -2,6 +2,7 @@ package com.codepath.apps.restclienttemplate;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,6 +76,8 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
         TextView tvName;
         TextView tvTimeAgo;
         ImageButton ibReply;
+        TextView tvFavourites;
+        TextView tvRetweet;
         // itemView = representation of one row of the recyclerView
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -85,6 +88,8 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
             ivMedia = itemView.findViewById(R.id.ivMedia);
             tvTimeAgo = itemView.findViewById(R.id.tvTime);
             ibReply = itemView.findViewById(R.id.btnReply);
+            tvFavourites = itemView.findViewById(R.id.tvFavourites);
+            tvRetweet = itemView.findViewById(R.id.tvRetweet);
 
             // Navigate to tweet Details activity on click of card view
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -104,10 +109,13 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
 
         // take out the different attributes of the screen and use it to fill out what we have on screen
         public void bind(Tweet tweet) {
+
             tvBody.setText(tweet.body);
             tvScreenName.setText("@"+tweet.user.screenName);
             tvName.setText(tweet.user.name);
             tvTimeAgo.setText(tweet.relativeTimeAgo);
+            tvFavourites.setText("" + tweet.favoriteCount);
+            tvRetweet.setText("" + tweet.retweet_count);
             Glide.with(context).load(tweet.user.profileImageURL).apply(new RequestOptions().circleCrop()).into(ivProfileImage);
             if (tweet.imageURL != null) {
                 ivMedia.setVisibility(View.VISIBLE);

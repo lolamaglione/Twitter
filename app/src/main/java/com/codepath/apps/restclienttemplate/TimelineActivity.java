@@ -42,6 +42,7 @@ public class TimelineActivity extends AppCompatActivity {
     private final int REQUEST_CODE = 20;
     FloatingActionButton floatingButtonCompose;
     ImageButton ibReply;
+    Long max_id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,16 +74,6 @@ public class TimelineActivity extends AppCompatActivity {
                 startActivityForResult(intent, REQUEST_CODE);
             }
         });
-
-//        ibReply.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(TimelineActivity.this, ComposeActivity.class);
-//                startActivityForResult(intent, REQUEST_CODE);
-//                Tweet tweet = (Tweet) view.getTag();
-//                intent.putExtra("username", tweet.user.screenName);
-//            }
-//        });
 
 
 

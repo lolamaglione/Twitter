@@ -1238,10 +1238,12 @@ int id group_divider 0x7f080075
 int id groups 0x7f080076
 int id home 0x7f080077
 int id homeAsUp 0x7f080078
+int id ibRetweet 0x7f080118
 int id icon 0x7f080079
 int id icon_group 0x7f08007a
 int id ifRoom 0x7f08007b
 int id image 0x7f08007c
+int id imageButton3 0x7f080116
 int id info 0x7f08007d
 int id invisible 0x7f08007e
 int id italic 0x7f08007f
@@ -1369,7 +1371,9 @@ int id transition_scene_layoutid_cache 0x7f0800f4
 int id transition_transform 0x7f0800f5
 int id tvBody 0x7f0800f6
 int id tvBodyDetail 0x7f08010e
+int id tvFavourites 0x7f080117
 int id tvNameDetail 0x7f080113
+int id tvRetweet 0x7f08011a
 int id tvScreenName 0x7f0800f7
 int id tvTime 0x7f08010a
 int id tvUsername 0x7f080109
@@ -1380,6 +1384,7 @@ int id uniform 0x7f0800fa
 int id unlabeled 0x7f0800fb
 int id up 0x7f0800fc
 int id useLogo 0x7f0800fd
+int id vTweet 0x7f08011b
 int id view_offset_helper 0x7f0800fe
 int id view_tree_lifecycle_owner 0x7f0800ff
 int id view_tree_saved_state_registry_owner 0x7f080100

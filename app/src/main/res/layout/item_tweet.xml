@@ -2,10 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vTweet"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp"
-    android:background="@drawable/tweet_background">
+    android:background="@drawable/tweet_background"
+    android:padding="10dp">
 
     <ImageView
         android:id="@+id/ivProfileImage"
@@ -25,8 +26,8 @@
         android:layout_marginStart="6dp"
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/ivProfileImage"
-        tools:text="LolaMaglione17"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        tools:text="LolaMaglione17" />
 
     <TextView
         android:id="@+id/tvBody"
@@ -36,8 +37,8 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivProfileImage"
-        tools:text="This is my tweet"
-        android:autoLink="all"/>
+        android:autoLink="all"
+        tools:text="This is my tweet" />
 
     <ImageView
         android:id="@+id/ivMedia"
@@ -78,5 +79,48 @@
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/ivProfileImage"
         app:srcCompat="@drawable/ic_vector_compose" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ivMedia"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/btnReply"
+        android:backgroundTint="#00FFFFFF"
+        app:srcCompat="@drawable/ic_vector_heart" />
+
+    <TextView
+        android:id="@+id/tvFavourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivMedia"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/imageButton3"
+        android:text="TextView" />
+
+    <ImageButton
+        android:id="@+id/ibRetweet"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ivMedia"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/tvFavourites"
+        android:backgroundTint="#00FFFFFF"
+        app:srcCompat="@drawable/ic_vector_retweet_stroke" />
+
+    <TextView
+        android:id="@+id/tvRetweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivMedia"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/ibRetweet"
+        android:text="TextView" />
+
 
 </RelativeLayout>

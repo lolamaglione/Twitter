@@ -24,6 +24,8 @@ public class Tweet {
     public User user;
     public String imageURL;
     public String relativeTimeAgo;
+    public int favoriteCount;
+    public int retweet_count;
     private static final int SECOND_MILLIS = 1000;
     private static final int MINUTE_MILLIS = 60 * SECOND_MILLIS;
     private static final int HOUR_MILLIS = 60 * MINUTE_MILLIS;
@@ -51,6 +53,8 @@ public class Tweet {
 
         tweet.createdAt = jsonObject.getString("created_at");
         tweet.relativeTimeAgo = tweet.getRelativeTimeAgo(tweet.createdAt);
+        tweet.favoriteCount = jsonObject.getInt("favorite_count");
+        tweet.retweet_count = jsonObject.getInt("retweet_count");
         tweet.user = User.fromJson(jsonObject.getJSONObject("user"));
         return tweet;
     }
