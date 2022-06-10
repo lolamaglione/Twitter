@@ -72,7 +72,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder>{
         public void bind(User user) {
 
             // set the values for each aspect of the user
-            tvUsername.setText(user.screenName);
+            tvUsername.setText("@" + user.screenName);
             tvName.setText(user.name);
             tvBio.setText(user.profileBio);
             Glide.with(context).load(user.profileImageURL).apply(new RequestOptions().circleCrop()).into(ivProfileImage);

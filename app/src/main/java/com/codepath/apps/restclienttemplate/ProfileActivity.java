@@ -51,25 +51,24 @@ public class ProfileActivity extends AppCompatActivity {
     List<Tweet> tweets_user;
     Button btnFollowing;
     Button btnFollowers;
-
-    //private ActivityProfileBinding binding;
+    private ActivityProfileBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //binding = ActivityProfileBinding.inflate(getLayoutInflater());
-        //View view = binding.getRoot();
-        setContentView(R.layout.activity_profile);
+        binding = ActivityProfileBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
 
-        profilePicture = findViewById(R.id.ivProfileProfile);
-        profileName = findViewById(R.id.tvNameProfile);
-        profileUsername = findViewById(R.id.tvUsernameProfile);
-        profileBio = findViewById(R.id.tvBioProfile);
-        profileFollowers = findViewById(R.id.tvFollowersProfile);
-        profileFollowing = findViewById(R.id.tvFollowingProfile);
-        rvUserTweets = findViewById(R.id.rvUserTweets);
-        btnFollowing = findViewById(R.id.btnFollowing);
-        btnFollowers = findViewById(R.id.btnFollowers);
+        profilePicture = binding.ivProfileProfile;
+        profileName = binding.tvNameProfile;
+        profileUsername = binding.tvUsernameProfile;
+        profileBio = binding.tvBioProfile;
+        profileFollowers = binding.tvFollowersProfile;
+        profileFollowing = binding.tvFollowingProfile;
+        rvUserTweets = binding.rvUserTweets;
+        btnFollowing = binding.btnFollowing;
+        btnFollowers = binding.btnFollowers;
 
         client = TwitterApp.getRestClient(this);
 
