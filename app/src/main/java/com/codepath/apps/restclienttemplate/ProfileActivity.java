@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.loader.content.Loader;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -49,6 +50,7 @@ public class ProfileActivity extends AppCompatActivity {
     SwipeRefreshLayout swipeContainer;
     List<Tweet> tweets_user;
     Button btnFollowing;
+    Button btnFollowers;
 
     //private ActivityProfileBinding binding;
 
@@ -67,6 +69,7 @@ public class ProfileActivity extends AppCompatActivity {
         profileFollowing = findViewById(R.id.tvFollowingProfile);
         rvUserTweets = findViewById(R.id.rvUserTweets);
         btnFollowing = findViewById(R.id.btnFollowing);
+        btnFollowers = findViewById(R.id.btnFollowers);
 
         client = TwitterApp.getRestClient(this);
 
@@ -93,6 +96,17 @@ public class ProfileActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(ProfileActivity.this, FollowingActivity.class);
                 intent.putExtra("user_id", Parcels.wrap(user.user_id));
+                intent.putExtra("following", Parcels.wrap("following"));
+                startActivity(intent);
+            }
+        });
+
+        btnFollowers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProfileActivity.this, FollowingActivity.class);
+                intent.putExtra("user_id", Parcels.wrap(user.user_id));
+                intent.putExtra("following", Parcels.wrap("followers"));
                 startActivity(intent);
             }
         });

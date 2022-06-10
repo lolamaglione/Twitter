@@ -61,6 +61,7 @@ public class FollowingActivity extends AppCompatActivity {
     }
 
     private void populateUserTimeline() {
+
         client.getFollowingTimeline(new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Headers headers, JSON json) {
@@ -86,6 +87,6 @@ public class FollowingActivity extends AppCompatActivity {
             public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
 
             }
-        }, Parcels.unwrap(getIntent().getParcelableExtra("user_id")));
+        }, Parcels.unwrap(getIntent().getParcelableExtra("user_id")), Parcels.unwrap(getIntent().getParcelableExtra("following")));
     }
 }

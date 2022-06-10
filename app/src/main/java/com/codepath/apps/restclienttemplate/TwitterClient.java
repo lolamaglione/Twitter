@@ -109,12 +109,17 @@ public class TwitterClient extends OAuthBaseClient {
 	}
 
 	// get the list of people that the user is following
-	public void getFollowingTimeline(JsonHttpResponseHandler handler, long user_id){
-		String apiUrl = getApiUrl("friends/list.json");
+	public void getFollowingTimeline(JsonHttpResponseHandler handler, long user_id, String value){
+		String apiUrl = "";
+		if (value.equals("following")){
+			apiUrl = getApiUrl("friends/list.json");
+		} else if(value.equals("followers")){
+			apiUrl = getApiUrl("followers/list.json");
+		}
 		RequestParams params = new RequestParams();
 		params.put("count", 25);
 		params.put("user_id", user_id);
-		params.put("curson", -1);
+		params.put("cursor", -1);
 		client.get(apiUrl, params, handler);
 	}
 
