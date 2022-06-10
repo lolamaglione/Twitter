@@ -122,6 +122,7 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
                     }
                 }
             });
+
         }
 
         // take out the different attributes of the screen and use it to fill out what we have on screen
@@ -134,8 +135,6 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
                             new PatternEditableBuilder.SpannableClickedListener() {
                                 @Override
                                 public void onSpanClicked(String text) {
-                                    Toast.makeText(context, "Clicked username: " + text,
-                                            Toast.LENGTH_SHORT).show();
                                 }
                             }).into(tvBody);
 
@@ -193,7 +192,6 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
                                 tweet.favoriteCount++;
                                 tvFavourites.setText("" + tweet.favoriteCount);
                                 ibFavorite.setImageResource(R.drawable.ic_vector_heart);
-                                Toast.makeText(context, "liked", Toast.LENGTH_SHORT).show();
                             }
 
                             @Override
@@ -210,7 +208,6 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
                                 tweet.favoriteCount--;
                                 tvFavourites.setText("" + tweet.favoriteCount);
                                 ibFavorite.setImageResource(R.drawable.ic_vector_heart_stroke);
-                                Toast.makeText(context, "unlike", Toast.LENGTH_SHORT).show();
                             }
                             @Override
                             public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
@@ -234,7 +231,6 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
                                 tweet.retweet_count++;
                                 tvRetweet.setText("" + tweet.retweet_count);
                                 ibRetweet.setImageResource(R.drawable.ic_vector_retweet);
-                                Toast.makeText(context, "succes!", Toast.LENGTH_SHORT).show();
                             }
 
                             @Override
@@ -250,7 +246,6 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
                                 tweet.retweet_count--;
                                 tvRetweet.setText("" + tweet.retweet_count);
                                 ibRetweet.setImageResource(R.drawable.ic_vector_retweet_stroke);
-                                Toast.makeText(context, "succes!", Toast.LENGTH_SHORT).show();
                             }
 
                             @Override

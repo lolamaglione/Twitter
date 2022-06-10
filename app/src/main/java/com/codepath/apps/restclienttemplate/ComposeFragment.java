@@ -82,7 +82,6 @@ public class ComposeFragment extends DialogFragment {
                     Toast.makeText(getActivity(), "Sorry, your tweet is too long", Toast.LENGTH_LONG).show();
                     return;
                 }
-                Toast.makeText(getActivity(), tweetContent, Toast.LENGTH_LONG).show();
                 // Make an API call to Twitter to publish the tweet
                 client.publishTweet(tweetContent, new JsonHttpResponseHandler() {
                     @Override
@@ -93,7 +92,6 @@ public class ComposeFragment extends DialogFragment {
                             Log.i(TAG, "Published tweet says: " + tweet);
                             Intent intent = new Intent();
                             intent.putExtra("tweet", Parcels.wrap(tweet));
-                            getDialog().dismiss();
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }

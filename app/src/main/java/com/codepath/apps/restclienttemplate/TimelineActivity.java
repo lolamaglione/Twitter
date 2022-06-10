@@ -72,7 +72,7 @@ public class TimelineActivity extends AppCompatActivity {
         //initialize the list of tweets and adapter
         tweets = new ArrayList<>();
         adapter = new TweetsAdapter(this, tweets);
-        // recycler view cofniguration setup:
+        // recycler view configuration setup:
             // layout manager and adapter
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         rvTweets.setLayoutManager(linearLayoutManager);
@@ -94,6 +94,10 @@ public class TimelineActivity extends AppCompatActivity {
 //                startActivityForResult(intent, REQUEST_CODE);
                 showProgressBar();
                 showComposeFragment();
+//                Tweet tweet = Parcels.unwrap(getIntent().getParcelableExtra("tweet"));
+//                tweets.add(0, tweet);
+//                adapter.notifyItemInserted(0);
+//                rvTweets.smoothScrollToPosition(0);
             }
         });
 
@@ -219,6 +223,11 @@ public class TimelineActivity extends AppCompatActivity {
             onLogoutButton();
             return true;
         }
+        if (item.getItemId() == R.id.compose){
+            Intent intent = new Intent(this, ComposeActivity.class);
+            startActivityForResult(intent, REQUEST_CODE);
+            finish();
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -281,6 +290,8 @@ public class TimelineActivity extends AppCompatActivity {
         // Hide progress item
         miActionProgressItem.setVisible(false);
     }
+
+
 
 
 
