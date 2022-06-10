@@ -21,6 +21,10 @@ import org.parceler.Parcels;
 
 import okhttp3.Headers;
 
+/**
+ * Compose Activity handles the composing of a new tweet, be it a reply or just
+ * a new tweet. Brings you to a new screen and pulished the tweet on your hometimeline
+ */
 public class ComposeActivity extends AppCompatActivity {
 
     public static final String TAG = "ComposeActivity";
@@ -44,8 +48,6 @@ public class ComposeActivity extends AppCompatActivity {
         setContentView(view);
         //tweet = (Tweet) Parcels.unwrap(getIntent().getParcelableExtra(Tweet.class.getSimpleName()));
         client = TwitterApp.getRestClient(this);
-//        etCompose = findViewById(R.id.etCompose);
-//        btnTweet = findViewById(R.id.btnTweet);
         etCompose = binding.etCompose;
         btnTweet = binding.btnTweet;
         //etCompose.setText("@" + );

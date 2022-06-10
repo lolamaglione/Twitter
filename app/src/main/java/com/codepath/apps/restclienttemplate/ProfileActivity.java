@@ -1,9 +1,11 @@
 package com.codepath.apps.restclienttemplate;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,6 +30,10 @@ import java.util.List;
 
 import okhttp3.Headers;
 
+/**
+ * This activity takes you to a specific users profile. This shows the tweets of that specific user
+ * through a recycler view and also shows the profile picture, bio, username and name of the user.
+ */
 public class ProfileActivity extends AppCompatActivity {
 
     ImageView profilePicture;
@@ -42,6 +48,7 @@ public class ProfileActivity extends AppCompatActivity {
     TweetsAdapter adapter;
     SwipeRefreshLayout swipeContainer;
     List<Tweet> tweets_user;
+    Button btnFollowing;
 
     //private ActivityProfileBinding binding;
 
@@ -59,13 +66,14 @@ public class ProfileActivity extends AppCompatActivity {
         profileFollowers = findViewById(R.id.tvFollowersProfile);
         profileFollowing = findViewById(R.id.tvFollowingProfile);
         rvUserTweets = findViewById(R.id.rvUserTweets);
+        btnFollowing = findViewById(R.id.btnFollowing);
 
         client = TwitterApp.getRestClient(this);
 
         user = (User) Parcels.unwrap(getIntent().getParcelableExtra("user"));
         System.out.println("user" + user);
         profileName.setText(user.name);
-        profileUsername.setText(user.screenName);
+        profileUsername.setText("@" + user.screenName);
         profileBio.setText(user.profileBio);
         Glide.with(this).load(user.profileImageURL).
                 apply(new RequestOptions().circleCrop()).into(profilePicture);
@@ -79,6 +87,15 @@ public class ProfileActivity extends AppCompatActivity {
         rvUserTweets.setLayoutManager(linearLayoutManager);
         rvUserTweets.setAdapter(adapter);
         populateHomeTimeline();
+
+        btnFollowing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProfileActivity.this, FollowingActivity.class);
+                intent.putExtra("user_id", Parcels.wrap(user.user_id));
+                startActivity(intent);
+            }
+        });
 
     }
 

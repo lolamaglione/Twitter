@@ -7,6 +7,18 @@
     tools:context=".ProfileActivity">
 
 
+    <Button
+        android:id="@+id/btnFollowing"
+        android:layout_width="49dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/tvBioProfile"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/tvFollowingProfile"
+        android:backgroundTint="#00FFFFFF"
+        android:text="following"
+        android:textSize="4sp" />
+
     <ImageView
         android:id="@+id/ivProfileProfile"
         android:layout_width="50dp"
@@ -55,17 +67,19 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvFollowingProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvBioProfile"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="10dp"
-        android:layout_toEndOf="@+id/tvFollowersProfile"
-        android:text="TextView" />
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@+id/btnFollowers"
+        android:text="TextView"
+        android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvUserTweets"
@@ -73,4 +87,16 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/tvFollowingProfile"
         android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnFollowers"
+        android:layout_width="49dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/tvBioProfile"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/tvFollowersProfile"
+        android:backgroundTint="#00FFFFFF"
+        android:text="followers"
+        android:textSize="4sp" />
 </RelativeLayout>

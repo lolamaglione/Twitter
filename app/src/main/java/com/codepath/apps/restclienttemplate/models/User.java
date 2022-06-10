@@ -1,9 +1,18 @@
 package com.codepath.apps.restclienttemplate.models;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.parceler.Parcel;
 
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * this is the user class. In the user class, similar than the tweet, you can access
+ * information about the user. Here you get the profile image, the username, amount of
+ * followers and following.
+ */
 @Parcel
 public class User {
 
@@ -30,5 +39,15 @@ public class User {
         user.user_id = jsonObject.getLong("id");
 
         return user;
+    }
+
+    public static List<User> fromJsonArrayUser(JSONArray jsonArray) throws JSONException {
+        List<User> users = new ArrayList<>();
+        // go through the JSON array and add to the tweets list
+        for(int i = 0; i < jsonArray.length(); i++){
+            users.add(fromJson(jsonArray.getJSONObject(i)));
+        }
+
+        return users;
     }
 }

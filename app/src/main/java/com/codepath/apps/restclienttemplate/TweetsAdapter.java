@@ -2,11 +2,7 @@ package com.codepath.apps.restclienttemplate;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.ColorStateList;
 import android.graphics.Color;
-import android.graphics.PorterDuff;
-import android.os.Parcelable;
-import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,7 +28,13 @@ import java.util.regex.Pattern;
 
 import okhttp3.Headers;
 
-
+/**
+ * This is the TweetsAdapter. This class handles the Twitter Timeline
+ * through a recycler view. It binds all the tweets in the user's hometimeline
+ * at the moment. This class takes you to the tweet details, the profile details,
+ * and the links in the tweets are clickable.
+ * This class also allows you to favorite and unfavorite your tweets.
+ */
 public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolder>{
     Context context;
     List<Tweet> tweets;
@@ -142,18 +144,23 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
             tvTimeAgo.setText(tweet.relativeTimeAgo);
             tvFavourites.setText("" + tweet.favoriteCount);
             tvRetweet.setText("" + tweet.retweet_count);
+            // handle the like and unlike
             if(tweet.favorited){
                 ibFavorite.setImageResource(R.drawable.ic_vector_heart);
             } else{
                 ibFavorite.setImageResource(R.drawable.ic_vector_heart_stroke);
             }
 
+            // handle the tweet and retweet
             if (tweet.retweeted){
                 ibRetweet.setImageResource(R.drawable.ic_vector_retweet);
             } else {
                 ibRetweet.setImageResource(R.drawable.ic_vector_retweet_stroke);
             }
+            // set the profile picture
             Glide.with(context).load(tweet.user.profileImageURL).apply(new RequestOptions().circleCrop()).into(ivProfileImage);
+
+            // handle the pictures in the tweets
             if (tweet.imageURL != null) {
                 ivMedia.setVisibility(View.VISIBLE);
                 Glide.with(context).load(tweet.imageURL).apply(new RequestOptions().centerCrop().transform(new RoundedCorners(100))).into(ivMedia);
@@ -161,6 +168,7 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
                 ivMedia.setVisibility(View.GONE);
             }
 
+            // handler the reply button
             TwitterClient client = new TwitterClient(context);
             ibReply.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -171,6 +179,7 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
                 }
             });
 
+            // handle the like and  unlike button
             ibFavorite.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -212,6 +221,7 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
                 }
             });
 
+            // handle the tweet and retweet action
             ibRetweet.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -252,6 +262,7 @@ public class TweetsAdapter  extends RecyclerView.Adapter<TweetsAdapter.ViewHolde
                 }
             });
 
+            // handle the profile action
             ivProfileImage.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

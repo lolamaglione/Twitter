@@ -4,10 +4,6 @@
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_vector_compose_dm_fab.xml.flat",
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/vector_compose_dm_fab.xml"
     },
@@ -16,16 +12,92 @@
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-mdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/layout_item_user.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/layout/item_user.xml"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_home_stroke.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_home_stroke.xml"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_photo.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_photo.xml"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_gif_pill.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_gif_pill.xml"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_search.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_search.xml"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_home.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_home.xml"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/menu_login.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/menu/login.xml"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_person_stroke.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_person_stroke.xml"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_logout.png.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxxhdpi/ic_logout.png"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_notifications.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_notifications.xml"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/layout_activity_profile.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/layout/activity_profile.xml"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_vector_compose_dm_shortcut.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/vector_compose_dm_shortcut.xml"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_logout.png.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-hdpi/ic_logout.png"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/layout_activity_tweet_details.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/layout/activity_tweet_details.xml"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_retweet_stroke.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_retweet_stroke.xml"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/layout_activity_following.xml.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/layout/activity_following.xml"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_logout.png.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xhdpi/ic_logout.png"
+    },
+    {
+        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/menu_menu_main.xml.flat",
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/menu/menu_main.xml"
     },
     {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_search_stroke.xml.flat",
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_search_stroke.xml"
-    },
-    {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_home_stroke.xml.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_home_stroke.xml"
     },
     {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_messages.xml.flat",
@@ -44,28 +116,8 @@
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_gif_pill_stroke.xml"
     },
     {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_photo.xml.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_photo.xml"
-    },
-    {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_gif_pill.xml.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_gif_pill.xml"
-    },
-    {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_close.xml.flat",
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_close.xml"
-    },
-    {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_search.xml.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_search.xml"
-    },
-    {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_home.xml.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_home.xml"
-    },
-    {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/menu_login.xml.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/menu/login.xml"
     },
     {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_vector_compose_shortcut.xml.flat",
@@ -80,24 +132,12 @@
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_retweet.xml"
     },
     {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_person_stroke.xml.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_person_stroke.xml"
-    },
-    {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_person.xml.flat",
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_person.xml"
     },
     {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_logout.png.flat",
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-mdpi/ic_logout.png"
-    },
-    {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_logout.png.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxxhdpi/ic_logout.png"
-    },
-    {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-hdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable_tweet_background.xml.flat",
@@ -112,16 +152,8 @@
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_compose_dm.xml"
     },
     {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_notifications.xml.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_notifications.xml"
-    },
-    {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_vector_compose_fab.xml.flat",
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/vector_compose_fab.xml"
-    },
-    {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/layout_activity_profile.xml.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/layout/activity_profile.xml"
     },
     {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_heart_stroke.xml.flat",
@@ -132,20 +164,8 @@
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/layout/activity_compose.xml"
     },
     {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_vector_compose_dm_shortcut.xml.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/vector_compose_dm_shortcut.xml"
-    },
-    {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/layout_activity_timeline.xml.flat",
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/layout/activity_timeline.xml"
-    },
-    {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_logout.png.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-hdpi/ic_logout.png"
-    },
-    {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/layout_activity_tweet_details.xml.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/layout/activity_tweet_details.xml"
     },
     {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable_shape_border.xml.flat",
@@ -164,23 +184,11 @@
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_messages_stroke.xml"
     },
     {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/layout/activity_login.xml"
-    },
-    {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_compose.xml.flat",
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_compose.xml"
     },
     {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_vector_retweet_stroke.xml.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xxhdpi/ic_vector_retweet_stroke.xml"
-    },
-    {
         "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/layout_item_tweet.xml.flat",
         "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/layout/item_tweet.xml"
-    },
-    {
-        "merged": "/Users/lolamaglione/Documents/GitHub/Twitter/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_logout.png.flat",
-        "source": "/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/res/drawable-xhdpi/ic_logout.png"
     }
 ]

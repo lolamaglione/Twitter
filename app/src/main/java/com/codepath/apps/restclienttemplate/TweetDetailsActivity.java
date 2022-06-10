@@ -16,6 +16,11 @@ import com.codepath.apps.restclienttemplate.models.Tweet;
 
 import org.parceler.Parcels;
 
+/**
+ * This activity handles the Details of the tweet. Once you click on the tweet you can see
+ * specific details like the tweetContent, the profile picture of the person who added the tweet,
+ * the username and the name.
+ */
 public class TweetDetailsActivity extends AppCompatActivity {
 
     Tweet tweet;

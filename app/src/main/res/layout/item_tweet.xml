@@ -74,12 +74,13 @@
 
     <ImageButton
         android:id="@+id/btnReply"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/ivMedia"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/ivProfileImage"
+        android:backgroundTint="#00FFFFFF"
         app:srcCompat="@drawable/ic_vector_compose" />
 
     <ImageButton

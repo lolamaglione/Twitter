@@ -32,6 +32,10 @@ import java.util.List;
 
 import okhttp3.Headers;
 
+/**
+ * This activity is where the timeline is populated and we get to see
+ * the tweets.
+ */
 public class TimelineActivity extends AppCompatActivity {
 
     TwitterClient client;
@@ -53,10 +57,7 @@ public class TimelineActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityTimelineBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
-        //setContentView(R.layout.activity_timeline);
         setContentView(view);
-        //ibReply = findViewById(R.id.btnReply);
-        System.out.println("here");
         client = TwitterApp.getRestClient(this);
 
         // Lookup the swipe container view
@@ -65,7 +66,6 @@ public class TimelineActivity extends AppCompatActivity {
         // setup refresh listner which triggers new data loading
 
         // find the recycler view
-        //rvTweets = findViewById(R.id.rvTweets);
         rvTweets = binding.rvTweets;
         //initialize the list of tweets and adapter
         tweets = new ArrayList<>();

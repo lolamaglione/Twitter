@@ -14,6 +14,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
+/**
+ * This is the parcelable object Tweet. This holds all the information for
+ * every tweet that is created, be it of the user or of another user.
+ * The tweet holds the body, the time when the tweet was created, the username of who
+ * tweeted and the screen name of who tweeted. You access this class if you want to
+ * access anything that is part of the tweet.
+ */
 @Parcel
 public class Tweet {
 

@@ -18,7 +18,7 @@
 12-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:8:22-78
 13
 14    <application
-14-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:10:5-51:19
+14-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:10:5-54:19
 15        android:name="com.codepath.apps.restclienttemplate.TwitterApp"
 15-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:11:9-35
 16        android:allowBackup="true"
@@ -35,82 +35,88 @@
 22-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:15:9-40
 23        <activity
 23-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:16:9-18:40
-24            android:name="com.codepath.apps.restclienttemplate.ProfileActivity"
-24-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:17:13-44
+24            android:name="com.codepath.apps.restclienttemplate.FollowingActivity"
+24-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:17:13-46
 25            android:exported="false" />
 25-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:18:13-37
 26        <activity
 26-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:19:9-21:40
-27            android:name="com.codepath.apps.restclienttemplate.ReplyComposeActivity"
-27-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:20:13-49
+27            android:name="com.codepath.apps.restclienttemplate.ProfileActivity"
+27-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:20:13-44
 28            android:exported="false" />
 28-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:21:13-37
 29        <activity
 29-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:22:9-24:40
-30            android:name="com.codepath.apps.restclienttemplate.TweetDetailsActivity"
+30            android:name="com.codepath.apps.restclienttemplate.ReplyComposeActivity"
 30-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:23:13-49
 31            android:exported="false" />
 31-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:24:13-37
 32        <activity
 32-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:25:9-27:40
-33            android:name="com.codepath.apps.restclienttemplate.ComposeActivity"
-33-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:26:13-44
+33            android:name="com.codepath.apps.restclienttemplate.TweetDetailsActivity"
+33-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:26:13-49
 34            android:exported="false" />
 34-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:27:13-37
 35        <activity
 35-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:28:9-30:40
-36            android:name="com.codepath.apps.restclienttemplate.TimelineActivity"
-36-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:29:13-45
+36            android:name="com.codepath.apps.restclienttemplate.ComposeActivity"
+36-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:29:13-44
 37            android:exported="false" />
 37-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:30:13-37
 38        <activity
-38-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:31:9-50:20
-39            android:name="com.codepath.apps.restclienttemplate.LoginActivity"
-39-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:32:13-42
-40            android:label="@string/app_name"
-40-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:33:13-45
-41            android:theme="@style/AppTheme" >
-41-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:34:13-44
-42            <intent-filter>
-42-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:35:13-39:29
-43                <action android:name="android.intent.action.MAIN" />
-43-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:36:17-69
-43-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:36:25-66
-44
-45                <category android:name="android.intent.category.LAUNCHER" />
-45-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:38:17-77
-45-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:38:27-74
-46            </intent-filter>
-47            <intent-filter>
-47-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:40:13-49:29
-48                <action android:name="android.intent.action.VIEW" />
-48-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:41:17-69
-48-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:41:25-66
-49
-50                <category android:name="android.intent.category.DEFAULT" />
-50-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:43:17-76
-50-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:43:27-73
-51                <category android:name="android.intent.category.BROWSABLE" />
-51-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:44:17-78
-51-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:44:27-75
+38-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:31:9-33:40
+39            android:name="com.codepath.apps.restclienttemplate.TimelineActivity"
+39-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:32:13-45
+40            android:exported="false" />
+40-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:33:13-37
+41        <activity
+41-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:34:9-53:20
+42            android:name="com.codepath.apps.restclienttemplate.LoginActivity"
+42-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:35:13-42
+43            android:label="@string/app_name"
+43-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:36:13-45
+44            android:theme="@style/AppTheme" >
+44-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:37:13-44
+45            <intent-filter>
+45-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:38:13-42:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:39:17-69
+46-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:39:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:41:17-77
+48-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:41:27-74
+49            </intent-filter>
+50            <intent-filter>
+50-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:43:13-52:29
+51                <action android:name="android.intent.action.VIEW" />
+51-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:44:17-69
+51-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:44:25-66
 52
-53                <data
-53-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:46:17-48:62
-54                    android:host="@string/intent_host"
-54-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:47:21-55
-55                    android:scheme="@string/intent_scheme" />
-55-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:48:21-59
-56            </intent-filter>
-57        </activity>
-58
-59        <service
-59-->[androidx.room:room-runtime:2.4.0-alpha03] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1205f2be382ee3936676331c0046bb40/room-runtime-2.4.0-alpha03/AndroidManifest.xml:25:9-28:40
-60            android:name="androidx.room.MultiInstanceInvalidationService"
-60-->[androidx.room:room-runtime:2.4.0-alpha03] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1205f2be382ee3936676331c0046bb40/room-runtime-2.4.0-alpha03/AndroidManifest.xml:26:13-74
-61            android:directBootAware="true"
-61-->[androidx.room:room-runtime:2.4.0-alpha03] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1205f2be382ee3936676331c0046bb40/room-runtime-2.4.0-alpha03/AndroidManifest.xml:27:13-43
-62            android:exported="false" />
-62-->[androidx.room:room-runtime:2.4.0-alpha03] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1205f2be382ee3936676331c0046bb40/room-runtime-2.4.0-alpha03/AndroidManifest.xml:28:13-37
-63    </application>
-64
-65</manifest>
+53                <category android:name="android.intent.category.DEFAULT" />
+53-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:46:17-76
+53-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:46:27-73
+54                <category android:name="android.intent.category.BROWSABLE" />
+54-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:47:17-78
+54-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:47:27-75
+55
+56                <data
+56-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:49:17-51:62
+57                    android:host="@string/intent_host"
+57-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:50:21-55
+58                    android:scheme="@string/intent_scheme" />
+58-->/Users/lolamaglione/Documents/GitHub/Twitter/app/src/main/AndroidManifest.xml:51:21-59
+59            </intent-filter>
+60        </activity>
+61
+62        <service
+62-->[androidx.room:room-runtime:2.4.0-alpha03] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1205f2be382ee3936676331c0046bb40/room-runtime-2.4.0-alpha03/AndroidManifest.xml:25:9-28:40
+63            android:name="androidx.room.MultiInstanceInvalidationService"
+63-->[androidx.room:room-runtime:2.4.0-alpha03] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1205f2be382ee3936676331c0046bb40/room-runtime-2.4.0-alpha03/AndroidManifest.xml:26:13-74
+64            android:directBootAware="true"
+64-->[androidx.room:room-runtime:2.4.0-alpha03] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1205f2be382ee3936676331c0046bb40/room-runtime-2.4.0-alpha03/AndroidManifest.xml:27:13-43
+65            android:exported="false" />
+65-->[androidx.room:room-runtime:2.4.0-alpha03] /Users/lolamaglione/.gradle/caches/transforms-2/files-2.1/1205f2be382ee3936676331c0046bb40/room-runtime-2.4.0-alpha03/AndroidManifest.xml:28:13-37
+66    </application>
+67
+68</manifest>
