@@ -52,6 +52,7 @@ public class TimelineActivity extends AppCompatActivity {
     Long max_id;
     private EndlessRecyclerViewScrollListener scrollListener;
     private ActivityTimelineBinding binding;
+    MenuItem miActionProgressItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,6 +92,7 @@ public class TimelineActivity extends AppCompatActivity {
             public void onClick(View view) {
 //                Intent intent = new Intent(TimelineActivity.this, ComposeActivity.class);
 //                startActivityForResult(intent, REQUEST_CODE);
+                showProgressBar();
                 showComposeFragment();
             }
         });
@@ -259,6 +261,25 @@ public class TimelineActivity extends AppCompatActivity {
         ComposeFragment editNameDialogFragment = ComposeFragment.newInstance("Some Title");
         editNameDialogFragment.show(fm, "fragment_edit_name");
 
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        // Store instance of the menu item containing progress
+        miActionProgressItem = menu.findItem(R.id.miActionProgress);
+
+        // Return to finish
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    public void showProgressBar() {
+        // Show progress item
+        miActionProgressItem.setVisible(true);
+    }
+
+    public void hideProgressBar() {
+        // Hide progress item
+        miActionProgressItem.setVisible(false);
     }
 
 
